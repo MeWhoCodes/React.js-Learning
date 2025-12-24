@@ -1,21 +1,29 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { createElement } from 'react'
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
 
-//import App from './App.jsx'
+import App from './App.jsx'
+
+const domElement = createElement(
+  'a',
+  {href:'https://google.com', target:'_blank'},
+  'Click for google redirection'
+)
 
 
-// const customElement = React.createElement( // has syntax, tag type, properties, text
-//   'a',
-//   {taget: '_blank', href: 'https://google.com'},
-//   'Click this to get redirected to Google'
-// )
-function App(){
-  <h1>Yo</h1>
-}
+const AnotherElement = (
+  <a href="https://facebook.com" taget='_blank'>Facebook</a>
+)
 
-ReactDOM.createRoot(document.getElementById('root')).render(
 
-    <App/>
 
+createRoot(document.getElementById('root')).render(
+
+  //domElement
+  //AnotherElement
+  <App/>
+  
+
+  
 
 )
