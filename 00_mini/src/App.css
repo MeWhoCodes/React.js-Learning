@@ -1,0 +1,15 @@
+body {
+  
+  background-color: #373434;
+}
+
+.circle {
+  background-color: rgb(172, 237, 192);
+  border-radius: 50%;
+  position: absolute;
+  cursor: grab;
+}
+
+.circle.dragging {
+  cursor: grabbing;
+}
