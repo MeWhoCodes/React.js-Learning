@@ -25,7 +25,6 @@ export default function App() {
 
   return (
     <div
-      className="container"
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
     >
@@ -40,8 +39,8 @@ export default function App() {
         }}
       />
 
-      <input type="range" name="Size" value={siz} min={10} max={1000} onChange={(e)=>{setSize(e.target.value)}}/>
-      <div>Size: {siz}</div>
+      <input type="range"  name="Size" value={siz} min={10} max={1000} onChange={(e)=>{setSize(e.target.value)}}/>
+      <div style={{color: "white"}}>Size: {siz}</div>
     </div>
   );
 }
